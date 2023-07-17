@@ -39,6 +39,7 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-size: 0.8rem;
   transition: all 0.5s;
@@ -203,6 +204,7 @@ h6 {
   text-align: center;
   font-weight: 500;
   font-size: 0.75rem;
+  padding: 0.7rem 0;
 }
 
 @media screen and (min-width: 478px) {

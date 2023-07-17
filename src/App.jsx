@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <div className="login">
-        <h1>Welcome back!</h1>
+        <h1>Bem-vindo!</h1>
         <div className="container">
           <div className="top">
             <i><FontAwesomeIcon icon={faGoogle} /></i>
@@ -28,23 +28,23 @@ function App() {
             <i><FontAwesomeIcon icon={faTwitter} /></i>
             <i><FontAwesomeIcon icon={faApple} /></i>
           </div>
-          <p className="divider"><span>or</span></p>
+          <p className="divider"><span>ou</span></p>
           <form action="">
             <label htmlFor="">E-mail</label>
-            <input type="email" placeholder="Enter your email"/>
+            <input type="email" placeholder="Insira seu email"/>
             <label htmlFor="">Password</label>
-            <input type="password" placeholder='Enter your password'/>
+            <input type="password" placeholder="Insira sua senha"/>
             <div className="remember">
               <input type="checkbox" checked="checked"/>
-              <p>Remember me!</p>
+              <p>Mantenha-me conectado!</p>
             </div>
-            <button>Login</button>
+            <button>Entrar</button>
           </form>
           <div className="bottom">
-            <p>Forgot your password?</p>
-            <a href="/">Reset password</a>
+            <p>Esqueceu sua senha?</p>
+            <a href="/">Redefinir senha</a>
           </div>
-          <p className="create">Create account!</p>
+          <p className="create">Criar conta!</p>
         </div>
         <div className="theme-toggle">
           <h2>Mudar o tema: </h2>

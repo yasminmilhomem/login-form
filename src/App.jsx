@@ -3,7 +3,7 @@ import useLocalStorage from 'use-local-storage';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle, faFacebook, faLinkedin, faTwitter, faApple } from '@fortawesome/free-brands-svg-icons';
-import { faToggleOn, faToggleOff } from '@fortawesome/free-solid-svg-icons';
+import { faToggleOn, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import './index.css';
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <div className="login">
-        <h1>Login</h1>
+        <h1>Welcome back!</h1>
         <div className="container">
           <div className="top">
             <i><FontAwesomeIcon icon={faGoogle} /></i>
@@ -36,7 +36,7 @@ function App() {
             <input type="password" placeholder='Enter your password'/>
             <div className="remember">
               <input type="checkbox" checked="checked"/>
-              <p>Remember Me!</p>
+              <p>Remember me!</p>
             </div>
             <button>Login</button>
           </form>
@@ -47,10 +47,13 @@ function App() {
           <p className="create">Create account!</p>
         </div>
         <div className="theme-toggle">
-          <h2>Light Theme</h2>
+          <h2>Mudar o tema: </h2>
           <i onClick={switchTheme}><FontAwesomeIcon icon={faToggleOn} /></i>
         </div>
       </div>
+      <footer>
+        <h6>© 2023. Made with <FontAwesomeIcon icon={faHeart} /> by Yasmin M.</h6>
+      </footer>
     </div>
   )
 }

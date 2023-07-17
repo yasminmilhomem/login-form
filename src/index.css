@@ -136,6 +136,11 @@ button {
   border-radius: 0.7rem;
   font-weight: 600;
   cursor: pointer;
+  transition: scale 1s;
+}
+
+button:hover { 
+  transform: scale(105%);
 }
 
 .bottom {
@@ -145,10 +150,35 @@ button {
   font-size: 0.8rem;
 }
 
+.bottom a {
+  transition: opacity 0.4s;
+}
+
+.bottom a:hover {
+  opacity: 50%;
+}
+
 .create {
   font-size: 1rem;
   margin-top: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.create::after {
+  content: '';
+  width: 0;
+  height: 0.12rem;
+  background: var(--text-secondary);
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  transition: 0.35s;
+}
+
+.create:hover::after {
+  width: 100%;
 }
 
 h2 {
@@ -161,7 +191,23 @@ h2 {
   cursor: pointer;
 }
 .theme-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  margin: 0 auto;
+}
+
+footer h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 478px) {

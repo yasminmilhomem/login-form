@@ -51,9 +51,7 @@ function App() {
           <i onClick={switchTheme}><FontAwesomeIcon icon={faToggleOn} /></i>
         </div>
       </div>
-      <footer>
         <h6>© 2023. Made with <FontAwesomeIcon icon={faHeart} /> by Yasmin M.</h6>
-      </footer>
     </div>
   )
 }
